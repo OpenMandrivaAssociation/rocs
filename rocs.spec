@@ -32,7 +32,7 @@ one.
 %_kde_libdir/kde4/rocs_GMLParser.so
 %_kde_libdir/kde4/rocs_dotFilePlugin.so
 %_kde_appsdir/rocs
-%_kde_services/rocs_GMLParser.des
+%_kde_services/rocs_GMLParser.desktop
 %_kde_services/rocs_dotFilePlugin.desktop
 %_kde_services/rocs_plaintxtplugin.desktop
 %_kde_services/rocs_GraphStructure.desktop
