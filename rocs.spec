@@ -31,7 +31,9 @@ one.
 %_kde_libdir/kde4/rocs_transformedgesplugin.so
 %_kde_libdir/kde4/rocs_GMLParser.so
 %_kde_libdir/kde4/rocs_dotFilePlugin.so
+%_kde_libdir/kde4/rocs_RootedTreeStructure.so
 %_kde_appsdir/rocs
+%_kde_appsdir/rocs_rootedtree
 %_kde_services/rocs_GMLParser.desktop
 %_kde_services/rocs_dotFilePlugin.desktop
 %_kde_services/rocs_plaintxtplugin.desktop
@@ -42,6 +44,7 @@ one.
 %_kde_services/rocs_assignvaluesplugin.desktop
 %_kde_services/rocs_generategraphplugin.desktop
 %_kde_services/rocs_transformedgesplugin.desktop
+%_kde_services/rocs_RootedTreeStructure.desktop
 %_kde_servicetypes/RocsDataStructurePlugin.desktop
 
 
