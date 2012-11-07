@@ -1,6 +1,6 @@
 Name:		rocs
 Summary:	Graph - Editor and a Programming Environement
-Version: 4.9.2
+Version: 4.9.3
 Release: 1
 Group:		Graphical desktop/KDE
 License:	GPLv2 LGPLv2 GFDL
