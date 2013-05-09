@@ -23,8 +23,9 @@ one.
 %{_kde_appsdir}/rocs
 %{_kde_appsdir}/rocs_rootedtree
 %{_kde_applicationsdir}/rocs.desktop
-%{_kde_datadir}/config.kcfg/rocs.kcfg
 %{_kde_configdir}/rocs.knsrc
+%{_kde_datadir}/config.kcfg/rocs.kcfg
+%{_kde_iconsdir}/hicolor/*/apps/rocs.png
 %{_kde_libdir}/kde4/rocs_GraphStructure.so
 %{_kde_libdir}/kde4/rocs_ListStructure.so
 %{_kde_libdir}/kde4/rocs_RootedTreeStructure.so
@@ -117,6 +118,7 @@ Files needed to build applications based on %{name}.
 %changelog
 * Tue May 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.10.3-1
 - New version 4.10.3
+- Update files (add icons)
 
 * Wed Apr 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.10.2-1
 - New version 4.10.2
