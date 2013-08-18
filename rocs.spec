@@ -1,13 +1,14 @@
-Name:		rocs
 Summary:	Graph - Editor and a Programming Environement
+Name:		rocs
 Version:	4.11.0
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 LGPLv2 GFDL
-URL:		http://edu.kde.org/rocs
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Url:		http://edu.kde.org/rocs
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 BuildRequires:	boost-devel
+BuildRequires:	grantlee-devel
 
 %description
 Rocs aims to be a Graph Theory IDE for helping professors to show the results
@@ -118,6 +119,7 @@ Files needed to build applications based on %{name}.
 %changelog
 * Wed Aug 14 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.11.0-1
 - New version 4.11.0
+- Add grantlee-devel to BuildRequires
 
 * Wed Jul 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.10.5-1
 - New version 4.10.5
