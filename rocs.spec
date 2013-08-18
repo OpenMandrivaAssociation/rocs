@@ -26,7 +26,7 @@ one.
 %{_kde_applicationsdir}/rocs.desktop
 %{_kde_configdir}/rocs.knsrc
 %{_kde_datadir}/config.kcfg/rocs.kcfg
-%{_kde_iconsdir}/hicolor/*/apps/rocs.png
+%{_kde_iconsdir}/hicolor/*/apps/rocs.*
 %{_kde_libdir}/kde4/rocs_GraphStructure.so
 %{_kde_libdir}/kde4/rocs_ListStructure.so
 %{_kde_libdir}/kde4/rocs_RootedTreeStructure.so
@@ -120,6 +120,7 @@ Files needed to build applications based on %{name}.
 * Wed Aug 14 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.11.0-1
 - New version 4.11.0
 - Add grantlee-devel to BuildRequires
+- Update files list
 
 * Wed Jul 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.10.5-1
 - New version 4.10.5
