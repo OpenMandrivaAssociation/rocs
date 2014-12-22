@@ -1,14 +1,14 @@
 Summary:	Graph - Editor and a Programming Environement
 Name:		rocs
-Version:	4.13.3
+Version:	14.12.0
 Release:	1
+License:	GPLv2+
 Group:		Graphical desktop/KDE
-License:	GPLv2 LGPLv2 GFDL
 Url:		http://edu.kde.org/rocs
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdelibs4-devel
+Source0:	ftp://ftp.kde.org/pub/kde/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	boost-devel
 BuildRequires:	grantlee-devel
+BuildRequires:	kdelibs4-devel
 
 %description
 Rocs aims to be a Graph Theory IDE for helping professors to show the results
@@ -20,11 +20,12 @@ one.
 %files
 %doc AUTHORS COPYING COPYING.LIB.LGPL-2 COPYING.LIB.LGPL-2.1 COPYING.DOC README
 %doc %{_kde_docdir}/HTML/en/rocs
-%{_kde_bindir}/rocs
+%{_kde_applicationsdir}/rocs.desktop
 %{_kde_appsdir}/rocs
 %{_kde_appsdir}/rocs_rootedtree
-%{_kde_applicationsdir}/rocs.desktop
+%{_kde_bindir}/rocs
 %{_kde_configdir}/rocs.knsrc
+%{_kde_datadir}/appdata/rocs.appdata.xml
 %{_kde_datadir}/config.kcfg/rocs.kcfg
 %{_kde_iconsdir}/hicolor/*/apps/rocs.*
 %{_kde_libdir}/kde4/rocs_GraphStructure.so
@@ -84,11 +85,10 @@ Runtime library for Rocs.
 %files -n %{librocscore}
 %{_kde_libdir}/librocscore.so.%{rocscore_major}*
 
-
 #---------------------------------------------
 
 %package devel
-Summary:	Devel stuff for %{name}
+Summary:	Development files for %{name}
 Group:		Development/KDE and Qt
 Requires:	kdelibs4-devel
 Requires:	%{librocsvisualeditor} = %{EVRD}
@@ -117,6 +117,16 @@ Files needed to build applications based on %{name}.
 %makeinstall_std -C build
 
 %changelog
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.3-1
+- New version 4.14.3
+
+* Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.2-1
+- New version 4.14.2
+
+* Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.1-1
+- New version 4.14.1
+- Update files
+
 * Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.13.3-1
 - New version 4.13.3
 
