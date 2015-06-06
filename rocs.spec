@@ -9,6 +9,7 @@ Source0:	ftp://ftp.kde.org/pub/kde/stable/applications/%{version}/src/%{name}-%{
 BuildRequires:	boost-devel
 BuildRequires:	grantlee-devel
 BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5DocTools)
 
 %description
 Rocs aims to be a Graph Theory IDE for helping professors to show the results
