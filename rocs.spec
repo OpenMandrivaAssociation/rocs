@@ -1,7 +1,7 @@
 Summary:	Graph - Editor and a Programming Environement
 Name:		rocs
-Version:	15.04.3
-Release:	3
+Version:	15.08.1
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/rocs
@@ -11,6 +11,32 @@ BuildRequires:	grantlee-devel
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(Grantlee5)
+
+BuildRequires:  cmake(KF5Archive)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5Declarative)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5ItemViews)
+BuildRequires:	cmake(KF5TextEditor)
+BuildRequires:	cmake(KF5XmlGui)
+
+BuildRequires: pkgconfig(Qt5Concurrent)
+BuildRequires: pkgconfig(Qt5Core)
+BuildRequires: pkgconfig(Qt5Gui)
+BuildRequires: pkgconfig(Qt5Network)
+BuildRequires: pkgconfig(Qt5Qml)
+BuildRequires: pkgconfig(Qt5Quick)
+BuildRequires: pkgconfig(Qt5QuickWidgets)
+BuildRequires: pkgconfig(Qt5Script)
+BuildRequires: pkgconfig(Qt5WebKit)
+BuildRequires: pkgconfig(Qt5WebKitWidgets)
+BuildRequires: pkgconfig(Qt5Widgets)
+BuildRequires: pkgconfig(Qt5ScriptTools)
+BuildRequires: pkgconfig(Qt5Svg)
+BuildRequires: pkgconfig(Qt5XmlPatterns)
+BuildRequires: pkgconfig(Qt5Test)
 
 %description
 Rocs aims to be a Graph Theory IDE for helping professors to show the results
