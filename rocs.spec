@@ -46,19 +46,19 @@ graph and every change in the graph with the script is reflected on the drawn
 one.
 
 %files
-%doc AUTHORS COPYING COPYING.LIB.LGPL-2 COPYING.LIB.LGPL-2.1 COPYING.DOC README                                                                                    
-%doc %{_docdir}/HTML/en/rocs                                                                           
-%{_datadir}/applications/org.kde.rocs.desktop                                                             
+%doc AUTHORS COPYING.LIB.LGPL-2 COPYING.LIB.LGPL-2.1 COPYING.DOC README                                                                                    
+%doc %{_docdir}/HTML/en/rocs
+%{_datadir}/applications/org.kde.rocs.desktop
 %{_datadir}/rocs
 %{_datadir}/rocsgraphtheory
 %{_datadir}/kxmlgui5/rocs
-%{_bindir}/rocs                                                                                        
-%{_datadir}/config/rocs.knsrc                                                                          
-%{_datadir}/applications/org.kde.rocs.desktop
-%{_datadir}/appdata/rocs.appdata.xml                                                                   
+%{_bindir}/rocs
+%{_datadir}/appdata/org.kde.rocs.appdata.xml
 %{_datadir}/config.kcfg/rocs.kcfg                                                                      
 %{_iconsdir}/hicolor/*/apps/rocs.*                                                                     
 %{_iconsdir}/hicolor/*/actions/rocs*
+
+%{_qt5_plugindir}/rocs
 
 #---------------------------------------------
 
