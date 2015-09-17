@@ -48,79 +48,28 @@ one.
 %files
 %doc AUTHORS COPYING COPYING.LIB.LGPL-2 COPYING.LIB.LGPL-2.1 COPYING.DOC README                                                                                    
 %doc %{_docdir}/HTML/en/rocs                                                                           
-%{_datadir}/applications/kde4/rocs.desktop                                                             
-%{_datadir}/apps/rocs                                                                                  
-%{_datadir}/apps/rocs_rootedtree                                                                       
+%{_datadir}/applications/org.kde.rocs.desktop                                                             
+%{_datadir}/rocs
+%{_datadir}/rocsgraphtheory
+%{_datadir}/kxmlgui5/rocs
 %{_bindir}/rocs                                                                                        
 %{_datadir}/config/rocs.knsrc                                                                          
+%{_datadir}/applications/org.kde.rocs.desktop
 %{_datadir}/appdata/rocs.appdata.xml                                                                   
 %{_datadir}/config.kcfg/rocs.kcfg                                                                      
 %{_iconsdir}/hicolor/*/apps/rocs.*                                                                     
-%{_libdir}/kde4/rocs_GraphStructure.so                                                                 
-%{_libdir}/kde4/rocs_ListStructure.so                                                                  
-%{_libdir}/kde4/rocs_RootedTreeStructure.so                                                            
-%{_libdir}/kde4/rocs_assignvaluesplugin.so                                                             
-%{_libdir}/kde4/rocs_generategraphplugin.so                                                            
-%{_libdir}/kde4/rocs_transformedgesplugin.so                                                           
-%{_libdir}/kde4/rocs_dotfileformat.so                                                                  
-%{_libdir}/kde4/rocs_gmlfileformat.so                                                                  
-%{_libdir}/kde4/rocs_kmlfileformat.so                                                                  
-%{_libdir}/kde4/rocs_tgffileformat.so                                                                  
-%{_libdir}/kde4/rocs_tikzfileformat.so                                                                 
-%{_datadir}/kde4/services/rocs_GraphStructure.desktop                                                  
-%{_datadir}/kde4/services/rocs_ListStructure.desktop                                                   
-%{_datadir}/kde4/services/rocs_RootedTreeStructure.desktop                                             
-%{_datadir}/kde4/services/rocs_assignvaluesplugin.desktop                                              
-%{_datadir}/kde4/services/rocs_generategraphplugin.desktop                                             
-%{_datadir}/kde4/services/rocs_transformedgesplugin.desktop                                            
-%{_datadir}/kde4/services/rocs_dotfileformatplugin.desktop                                             
-%{_datadir}/kde4/services/rocs_gmlfileformatplugin.desktop                                             
-%{_datadir}/kde4/services/rocs_kmlfileformatplugin.desktop                                             
-%{_datadir}/kde4/services/rocs_tgffileformatplugin.desktop                                             
-%{_datadir}/kde4/services/rocs_tikzfileformatplugin.desktop                                            
-%{_datadir}/kde4/servicetypes/RocsDataStructurePlugin.desktop                                          
-%{_datadir}/kde4/servicetypes/RocsGraphFilePlugin.desktop                                              
-%{_datadir}/kde4/servicetypes/RocsToolsPlugin.desktop    
+%{_iconsdir}/hicolor/*/actions/rocs*
 
 #---------------------------------------------
 
-%define rocsvisualeditor_major 4
-%define librocsvisualeditor %mklibname rocsvisualeditor %{rocsvisualeditor_major}
-
-%package -n %{librocsvisualeditor}
-Summary:	Runtime library for Rocs
-Group:		System/Libraries
-
-%description -n %{librocsvisualeditor}
-Runtime library for Rocs.
-
-%files -n %{librocsvisualeditor}
-%{_kde_libdir}/librocsvisualeditor.so.%{rocsvisualeditor_major}*
-
-#---------------------------------------------
-
-%define rocscore_major 4
-%define librocscore %mklibname rocscore %{rocscore_major}
-
-%package -n %{librocscore}
-Summary:	Runtime library for Rocs
-Group:		System/Libraries
-Obsoletes:	%{_lib}rocslib4 < 4.10.0
-
-%description -n %{librocscore}
-Runtime library for Rocs.
-
-%files -n %{librocscore}
-%{_libdir}/librocscore.so.%{rocscore_major}*
+%libpackage rocsgraphtheory 0
 
 #---------------------------------------------
 
 %package devel
 Summary:	Development files for %{name}
 Group:		Development/KDE and Qt
-Requires:	kdelibs4-devel
-Requires:	%{librocsvisualeditor} = %{EVRD}
-Requires:	%{librocscore} = %{EVRD}
+Requires:	%{mklibname rocsgraphtheory 0} = %{EVRD}
 Requires:	boost-devel
 Conflicts:	kdeedu4-devel < 4.6.90
 
@@ -129,8 +78,7 @@ Files needed to build applications based on %{name}.
 
 %files devel                                                                                           
 %{_includedir}/rocs                                                                                    
-%{_libdir}/librocsvisualeditor.so                                                                      
-%{_libdir}/librocscore.so
+%{_libdir}/librocsgraphtheory.so                                                                      
 #----------------------------------------------------------------------
 
 %prep
