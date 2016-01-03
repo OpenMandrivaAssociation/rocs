@@ -77,7 +77,7 @@ Conflicts:	kdeedu4-devel < 4.6.90
 Files needed to build applications based on %{name}.
 
 %files devel
-%doc AUTHORS COPYING.LIB.LGPL-2 COPYING.LIB.LGPL-2.1 COPYING.DOC README
+%doc AUTHORS COPYING.GPL2 COPYING.LIB.LGPL-2.1 COPYING.DOC README
 %{_includedir}/rocs
 %{_libdir}/librocsgraphtheory.so
 #----------------------------------------------------------------------
