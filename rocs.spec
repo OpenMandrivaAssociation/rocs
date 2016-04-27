@@ -1,7 +1,7 @@
 Summary:	Graph - Editor and a Programming Environement
 Name:		rocs
-Version:	15.12.3
-Release:	2
+Version:	16.04.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/rocs
@@ -50,7 +50,6 @@ one.
 %doc %{_docdir}/HTML/en/rocs
 %{_datadir}/applications/org.kde.rocs.desktop
 %{_datadir}/rocs
-%{_datadir}/rocsgraphtheory
 %{_datadir}/kxmlgui5/rocs
 %{_bindir}/rocs
 %{_datadir}/appdata/org.kde.rocs.appdata.xml

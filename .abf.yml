@@ -1,4 +1,2 @@
-removed_sources:
-  rocs-15.04.3.tar.xz: 13c189ae0d071b1e40196b7d2f6cbe13bb523c47
 sources:
-  rocs-15.12.3.tar.xz: 4f964e2c35204adc8dce0cb6cff2905ca883bd7f
+  rocs-16.04.0.tar.xz: 76700ea7acbca8967fca22431960ce3b85dc3844
