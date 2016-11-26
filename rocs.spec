@@ -52,7 +52,7 @@ one.
 %{_datadir}/rocs
 %{_datadir}/kxmlgui5/rocs
 %{_bindir}/rocs
-%{_datadir}/appdata/org.kde.rocs.appdata.xml
+%{_datadir}/metainfo/org.kde.rocs.appdata.xml
 %{_datadir}/config.kcfg/rocs.kcfg
 %{_iconsdir}/hicolor/*/apps/rocs.*
 %{_iconsdir}/hicolor/*/actions/rocs*
