@@ -1,6 +1,6 @@
 Summary:	Graph - Editor and a Programming Environement
 Name:		rocs
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -46,8 +46,7 @@ Rocs has a scripting module, done in Qt Script, that interacts with the drawn
 graph and every change in the graph with the script is reflected on the drawn
 one.
 
-%files
-%doc %{_docdir}/HTML/en/rocs
+%files -f all.lang
 %{_datadir}/applications/org.kde.rocs.desktop
 %{_datadir}/rocs
 %{_datadir}/kxmlgui5/rocs
@@ -90,3 +89,6 @@ Files needed to build applications based on %{name}.
 
 %install
 %ninja_install -C build
+%find_lang rocs --with-html
+%find_lang libgraphtheory
+cat *.lang >all.lang
