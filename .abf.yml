@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   rocs-17.12.1.tar.xz: 98aa816ea8e18f431714808523d146466f65cf24
+sources:
+  rocs-17.12.2.tar.xz: 17eeccbf001914113addacb674d8795f86b1c913
