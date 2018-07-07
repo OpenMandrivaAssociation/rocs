@@ -11,7 +11,6 @@ BuildRequires:	grantlee-devel
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(Grantlee5)
-
 BuildRequires:	cmake(KF5Archive)
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5CoreAddons)
@@ -22,6 +21,8 @@ BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5ItemViews)
 BuildRequires:	cmake(KF5TextEditor)
 BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(KF5Service)
+BuildRequires:	cmake(KF5Parts)
 
 BuildRequires:	pkgconfig(Qt5Concurrent)
 BuildRequires:	pkgconfig(Qt5Core)
