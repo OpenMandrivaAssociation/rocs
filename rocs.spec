@@ -2,8 +2,8 @@
 
 Summary:	Graph - Editor and a Programming Environement
 Name:		rocs
-Version:	18.12.3
-Release:	2
+Version:	19.04.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/rocs
@@ -78,7 +78,6 @@ Conflicts:	kdeedu4-devel < 4.6.90
 Files needed to build applications based on %{name}.
 
 %files devel
-%doc AUTHORS COPYING.GPL2 COPYING.LIB.LGPL-2.1 COPYING.DOC README
 %{_includedir}/rocs
 %{_libdir}/librocsgraphtheory.so
 #----------------------------------------------------------------------
