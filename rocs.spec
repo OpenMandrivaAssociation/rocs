@@ -3,7 +3,7 @@
 Summary:	Graph - Editor and a Programming Environement
 Name:		rocs
 Version:	22.12.3
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/rocs
@@ -70,7 +70,7 @@ one.
 %package devel
 Summary:	Development files for %{name}
 Group:		Development/KDE and Qt
-Requires:	%{mklibname rocsgraphtheory 0} = %{EVRD}
+Requires:	%{mklibname rocsgraphtheory} = %{EVRD}
 Requires:	boost-devel
 Conflicts:	kdeedu4-devel < 4.6.90
 
