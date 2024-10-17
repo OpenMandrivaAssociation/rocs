@@ -6,7 +6,7 @@ Version:	23.08.5
 Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://edu.kde.org/rocs
+Url:		https://edu.kde.org/rocs
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	boost-devel
 BuildRequires:	grantlee-devel
