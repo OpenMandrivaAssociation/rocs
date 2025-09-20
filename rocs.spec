@@ -2,8 +2,8 @@
 
 Summary:	Graph - Editor and a Programming Environement
 Name:		rocs
-Version:	23.08.5
-Release:	3
+Version:	25.08.1
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://edu.kde.org/rocs
@@ -52,7 +52,6 @@ one.
 %files -f all.lang
 %{_datadir}/applications/org.kde.rocs.desktop
 %{_datadir}/rocs
-%{_datadir}/kxmlgui5/rocs
 %{_bindir}/rocs
 %{_datadir}/metainfo/org.kde.rocs.appdata.xml
 %{_datadir}/config.kcfg/rocs.kcfg
