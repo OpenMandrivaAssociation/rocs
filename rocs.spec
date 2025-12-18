@@ -1,46 +1,43 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
-Summary:	Graph - Editor and a Programming Environement
+Summary:	Graph - Editor and a Programming Environment
 Name:		rocs
-Version:	25.08.3
+Version:	25.12.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://edu.kde.org/rocs
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
+BuildSystem:	cmake
 BuildRequires:	boost-devel
 BuildRequires:	grantlee-devel
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(KF5DocTools)
-BuildRequires:	cmake(Grantlee5)
-BuildRequires:	cmake(KF5Archive)
-BuildRequires:	cmake(KF5Config)
-BuildRequires:	cmake(KF5CoreAddons)
-BuildRequires:	cmake(KF5Crash)
-BuildRequires:	cmake(KF5Declarative)
-BuildRequires:	cmake(KF5DocTools)
-BuildRequires:	cmake(KF5I18n)
-BuildRequires:	cmake(KF5ItemViews)
-BuildRequires:	cmake(KF5TextEditor)
-BuildRequires:	cmake(KF5XmlGui)
-BuildRequires:	cmake(KF5Service)
-BuildRequires:	cmake(KF5Parts)
+BuildRequires:	cmake(KF6DocTools)
+BuildRequires:	cmake(KF6Archive)
+BuildRequires:	cmake(KF6Config)
+BuildRequires:	cmake(KF6CoreAddons)
+BuildRequires:	cmake(KF6Crash)
+BuildRequires:	cmake(KF6Declarative)
+BuildRequires:	cmake(KF6DocTools)
+BuildRequires:	cmake(KF6I18n)
+BuildRequires:	cmake(KF6ItemViews)
+BuildRequires:	cmake(KF6TextEditor)
+BuildRequires:	cmake(KF6XmlGui)
+BuildRequires:	cmake(KF6Service)
+BuildRequires:	cmake(KF6Parts)
 
-BuildRequires:	pkgconfig(Qt5Concurrent)
-BuildRequires:	pkgconfig(Qt5Core)
-BuildRequires:	pkgconfig(Qt5Gui)
-BuildRequires:	pkgconfig(Qt5Network)
-BuildRequires:	pkgconfig(Qt5Qml)
-BuildRequires:	pkgconfig(Qt5Quick)
-BuildRequires:	pkgconfig(Qt5QuickWidgets)
-BuildRequires:	pkgconfig(Qt5Script)
-BuildRequires:	pkgconfig(Qt5WebKit)
-BuildRequires:	pkgconfig(Qt5WebKitWidgets)
-BuildRequires:	pkgconfig(Qt5Widgets)
-BuildRequires:	pkgconfig(Qt5ScriptTools)
-BuildRequires:	pkgconfig(Qt5Svg)
-BuildRequires:	pkgconfig(Qt5XmlPatterns)
-BuildRequires:	pkgconfig(Qt5Test)
+BuildRequires:	pkgconfig(Qt6Concurrent)
+BuildRequires:	pkgconfig(Qt6Core)
+BuildRequires:	pkgconfig(Qt6Gui)
+BuildRequires:	pkgconfig(Qt6Network)
+BuildRequires:	pkgconfig(Qt6Qml)
+BuildRequires:	pkgconfig(Qt6Quick)
+BuildRequires:	pkgconfig(Qt6QuickWidgets)
+BuildRequires:	pkgconfig(Qt6WebEngineCore)
+BuildRequires:	pkgconfig(Qt6WebEngineWidgets)
+BuildRequires:	pkgconfig(Qt6Widgets)
+BuildRequires:	pkgconfig(Qt6Svg)
+BuildRequires:	pkgconfig(Qt6Test)
 
 %description
 Rocs aims to be a Graph Theory IDE for helping professors to show the results
@@ -49,7 +46,7 @@ Rocs has a scripting module, done in Qt Script, that interacts with the drawn
 graph and every change in the graph with the script is reflected on the drawn
 one.
 
-%files -f all.lang
+%files -f %{name}.lang
 %{_datadir}/applications/org.kde.rocs.desktop
 %{_datadir}/rocs
 %{_bindir}/rocs
@@ -57,8 +54,7 @@ one.
 %{_datadir}/config.kcfg/rocs.kcfg
 %{_iconsdir}/hicolor/*/apps/rocs.*
 %{_iconsdir}/hicolor/*/actions/rocs*
-
-%{_qt5_plugindir}/rocs
+%{_qtdir}/plugins/rocs
 
 #---------------------------------------------
 
@@ -79,17 +75,3 @@ Files needed to build applications based on %{name}.
 %files devel
 %{_includedir}/rocs
 %{_libdir}/librocsgraphtheory.so
-#----------------------------------------------------------------------
-
-%prep
-%setup -q
-%cmake_kde5
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang rocs --with-html
-%find_lang libgraphtheory
-cat *.lang >all.lang
