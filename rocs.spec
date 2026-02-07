@@ -25,6 +25,8 @@ BuildRequires:	cmake(KF6TextEditor)
 BuildRequires:	cmake(KF6XmlGui)
 BuildRequires:	cmake(KF6Service)
 BuildRequires:	cmake(KF6Parts)
+BuildRequires:	cmake(KF6TextTemplate)
+BuildRequires:	cmake(KF6TextWidgets)
 
 BuildRequires:	pkgconfig(Qt6Concurrent)
 BuildRequires:	pkgconfig(Qt6Core)
