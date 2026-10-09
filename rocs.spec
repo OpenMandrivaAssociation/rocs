@@ -2,8 +2,8 @@
 
 Summary:	Graph - Editor and a Programming Environment
 Name:		rocs
-Version:	26.08.1
-Release:	2
+Version:	26.08.2
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://edu.kde.org/rocs
